@@ -9,5 +9,16 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LucyLu23/expressCrashCourse.git"
+  },
+  "bugs": {
+    "url": "https://github.com/LucyLu23/expressCrashCourse/issues"
+  },
+  "homepage": "https://github.com/LucyLu23/expressCrashCourse#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
 }
