@@ -9,14 +9,11 @@ const app = express();
 
 const { allowedNodeEnvironmentFlags } = require('process');
 
-
-
-
 //init middleware
 // app.use(logger); 
 
 //handlebars middleware
-app.engine('handlebars', exphbs({defaultLayout: 'main'}));
+app.engine('handlebars', exphbs.engine({defaultLayout: 'main'}));
 app.set('view engine', 'handlebars');
 
 //Body Parser Middleware
