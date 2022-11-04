@@ -9,7 +9,7 @@ const app = express();
 
 const { allowedNodeEnvironmentFlags } = require('process');
 
-//init middleware
+//init middleware 
 // app.use(logger); 
 
 //handlebars middleware
@@ -21,10 +21,12 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 //homwpage route
-app.get('/',(req, res) => res.render('index',{
-   title: 'Member App',
-   members
-}));
+app.get('/',(req, res) => 
+    res.render('index',{
+        title: 'Member App',
+        members
+})
+);
 //set static folder
 app.use(express.static(path.join(__dirname,'public')));
 
@@ -37,5 +39,5 @@ app.use('/api/members', require('./routes/api/members'));
 
 const PORT = process.env.PORT || 3000;
 
-app.listen(PORT,()=>console.log(`Sever started on port ${PORT}`));
+app.listen(PORT,()=>console.log(`Server started on port ${PORT}`));
 
