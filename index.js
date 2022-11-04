@@ -4,6 +4,7 @@ const exphbs = require('express-handlebars');
 
 //const moment = require('momnet');
 const logger = require('./middleware/logger')
+const members = require('./Members');
 const app = express();
 
 const { allowedNodeEnvironmentFlags } = require('process');
